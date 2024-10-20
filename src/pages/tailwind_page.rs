@@ -16,7 +16,16 @@ pub fn tailwind_page() -> Html {
                         class="before:content-['Yew_is_set_up_with_tailwind!'] text-black text-5xl font-bold mt-4"
                     />
                     <div class="text-xl flex flex-col items-center gap-2 pt-2 w-4/5 text-center">
-                        <div>{ "Get this template at *link*" }</div>
+                        <div>
+                            { "Get this template at " }
+                            <a
+                                class="underline text-blue-950"
+                                href="https://github.com/stuartallen/yew-with-tailwind-template"
+                                target="_blank"
+                            >
+                                { "github.com/stuartallen/yew-with-tailwind-template" }
+                            </a>
+                        </div>
                         <div>
                             { "Check out the Yew docs " }
                             <a

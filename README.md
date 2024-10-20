@@ -21,6 +21,12 @@ This repository is a template for Yew setup with Tailwind. This is not an offici
 rustup target add wasm32-unknown-unknown
 ```
 
+- Then run with
+
+```
+trunk serve
+```
+
 ### Or
 
 serve this app just using Docker locally.
