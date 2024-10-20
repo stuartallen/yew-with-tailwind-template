@@ -39,6 +39,36 @@ docker build -t yew-tailwind-app .
 docker run -d -p 8080:80 --name yew-tailwind-container yew-tailwind-app
 ```
 
+## Recommended Setup for VSCode
+
+### Intellisense
+
+- Install the [tailwind-intellisense extension](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+- Then add the rust/html item/value pair within the tailwind include languages within your user settings
+
+### Format on Save
+
+- Install the [Run on Save extension](https://marketplace.visualstudio.com/items?itemName=emeraldwalk.RunOnSave)
+- Install the yew formatter:
+
+```
+cargo install yew-fmt
+```
+
+- Add the following to your user settings.json
+
+```
+"emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "\\.(rs)$",
+        "cmd": "yew-fmt ${file}"
+      }
+    ]
+  }
+
+```
+
 ## Deploying your application
 
 Currently this application is set up for deployment with fly.io, but could be adjusted for other cloud providers or self-hosting.
