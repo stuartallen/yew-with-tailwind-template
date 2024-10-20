@@ -52,7 +52,7 @@ fly deploy
 
 ## Updates
 
-None so far, this is the first available version!
+- 10/20/2024: This is the first available version!
 
 ## Issues?
 
